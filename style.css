@@ -1,0 +1,88 @@
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+    
+
+
+.container{
+    width: 1320px;
+    background: #e4fff4;
+    margin: 0 auto;
+}
+
+nav{
+    background:  rgb(114, 213, 252);
+    
+}
+ 
+nav .container .logo a img{
+    height: 50px;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container ul{
+    display: flex;
+    column-gap: 50px;
+}
+nav .container ul li a{
+    background: #b36a3a;
+    color: blue;
+    padding: 20px;
+}
+nav .container ul li:hover >a{
+    background: #fa23cb;
+    color: bisque;
+}
+nav .container ul li{
+    position: relative;
+}
+ 
+
+nav .container ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+nav .container ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav .container ul li ul a{
+    width: 100%;
+}
+nav .container ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
+.btn{
+    background: #fa0223;
+    color: #ffffff;
+     margin: 0 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    transition: .5;
+}
+.btn :hover{
+    background: #fa2335;
+    border-radius: 0 7px 0px 7px;
+}
